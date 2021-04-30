@@ -1,6 +1,8 @@
 const express = require('express');
  
 const app = express();
+
+app.use(express.static(__dirname+"/frontend"));
  
 app.get("/", function(req, res){
     res.send("Welcome to Vinay Kumar Kare's Basic Site");
@@ -8,8 +10,8 @@ app.get("/", function(req, res){
 
 app.get('/resume',function(req, res){
 
-    let indexFilePath = _dirname +"/resume.html";
-    res.sendFile(indexFilePath);
+    let indexFilePath = __dirname +"/frontend/html/resume.html";
+    res.sendFile(indexFilePath); 
 });
 
 // app.get("/resume", function(req, res){
