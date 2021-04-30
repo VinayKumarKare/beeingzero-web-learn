@@ -6,9 +6,15 @@ app.get("/", function(req, res){
     res.send("Welcome to Vinay Kumar Kare's Basic Site");
 })
 
-app.get("/resume", function(req, res){
-    res.send("Welcome to my Resume page");
-})
+app.get('/resume',function(req, res){
+
+    let indexFilePath = _dirname +"/resume.html";
+    res.sendFile(indexFilePath);
+});
+
+// app.get("/resume", function(req, res){
+//     res.send("Welcome to my Resume page");
+// })
 
 app.get("/home", function(req, res){
     res.send("Welcome to my Home page");
