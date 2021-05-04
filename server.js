@@ -14,6 +14,12 @@ app.get('/resume',function(req, res){
     res.sendFile(indexFilePath); 
 });
 
+app.get('/google',function(req, res){
+
+    let indexFilePath = __dirname +"/frontend/html/googleReplica.html";
+    res.sendFile(indexFilePath); 
+});
+
 // app.get("/resume", function(req, res){
 //     res.send("Welcome to my Resume page");
 // })
