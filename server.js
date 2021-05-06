@@ -26,6 +26,12 @@ app.get('/colorpicker',function(req, res){
     res.sendFile(indexFilePath); 
 });
 
+app.get('/loginForm',function(req, res){
+
+    let indexFilePath = __dirname +"/frontend/html/loginForm.html";
+    res.sendFile(indexFilePath); 
+});
+
 // app.get("/resume", function(req, res){
 //     res.send("Welcome to my Resume page");
 // })
