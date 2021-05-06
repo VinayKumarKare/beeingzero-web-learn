@@ -26,9 +26,15 @@ app.get('/colorpicker',function(req, res){
     res.sendFile(indexFilePath); 
 });
 
-app.get('/loginForm',function(req, res){
+app.get('/login',function(req, res){
 
     let indexFilePath = __dirname +"/frontend/html/loginForm.html";
+    res.sendFile(indexFilePath); 
+});
+
+app.get('/register',function(req, res){
+
+    let indexFilePath = __dirname +"/frontend/html/registrationForm.html";
     res.sendFile(indexFilePath); 
 });
 
